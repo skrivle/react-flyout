@@ -1,0 +1,11 @@
+{
+  "name": "ReactFlyout",
+  "version": "0.0.1",
+  "description": "A simple react flyout component",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jelle Versele",
+  "license": "ISC"
+}
