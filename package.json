@@ -2,10 +2,14 @@
   "name": "ReactFlyout",
   "version": "0.0.1",
   "description": "A simple react flyout component",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "test": "test"
   },
   "author": "Jelle Versele",
-  "license": "ISC"
+  "license": "ISC",
+  "browserify": {"transform": ["reactify"]},
+  "peerDependencies": {
+  	"react": "~0.13.0"
+  }
 }
