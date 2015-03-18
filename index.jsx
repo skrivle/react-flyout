@@ -88,9 +88,11 @@ module.exports = React.createClass({
 		return (
 			<div className={flyoutClasses}>
 				<div className="flyout__header">
-					<button onClick={this.onButtonClick}>{buttonText}</button>
+					<button type="button" onClick={this.onButtonClick}>{buttonText}</button>
 				</div>
-				<div className="flyout__body">flyout body</div>
+				<div className="flyout__body">
+					{this.props.children}
+				</div>
 			</div>
 		)
 	}
