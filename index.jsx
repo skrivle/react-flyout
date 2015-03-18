@@ -59,7 +59,8 @@ module.exports = React.createClass({
 		matchesEl = false;
 
 		for(var i = 0, iLen = parents.length; i < iLen; i ++) {
-			if(parents === this.getDOMNode()) {
+
+			if(parents[i] === this.getDOMNode()) {
 				matchesEl = true;
 				break;
 			}
