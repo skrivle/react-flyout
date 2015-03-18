@@ -2,16 +2,21 @@ var React = require('react/addons');
 var getParents = require('./utils').getParents;
 
 
-
 module.exports = React.createClass({
 
+
 	/* Component methods
+	-----------------------------------------
 	----------------------------------------- */
 	getInitialState: function () {
-		return {isOpen: false};
+
+		return {
+			isOpen: false
+		};
 	},
 
 	toggle: function () {
+
 		if(this.state.isOpen) {
 			this.close();
 		}else {
@@ -35,6 +40,7 @@ module.exports = React.createClass({
 
 
 	/* Event handlers
+	-----------------------------------------
 	----------------------------------------- */
 	onButtonClick: function (e) {
 		this.toggle();
@@ -62,6 +68,7 @@ module.exports = React.createClass({
 
 
 	/* Render
+	-----------------------------------------
 	----------------------------------------- */
 	render: function () {
 
