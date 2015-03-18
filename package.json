@@ -2,7 +2,7 @@
   "name": "ReactFlyout",
   "version": "0.0.1",
   "description": "A simple react flyout component",
-  "main": "index.jsx",
+  "main": "lib/index.jsx",
   "scripts": {
     "test": "test"
   },

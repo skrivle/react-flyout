@@ -1,19 +1,7 @@
 var React = require('react/addons');
+var getParents = require('./utils').getParents;
 
-function getParents (el) {
 
-	var parents, parent;
-
-	parents = [];
-	parent = el.parentNode;
-
-	while(parent) {
-		parents.unshift(parent);
-		parent = parent.parentNode;
-	}
-
-	return parents;
-}
 
 module.exports = React.createClass({
 
@@ -96,4 +84,7 @@ module.exports = React.createClass({
 			</div>
 		)
 	}
+
 });
+
+
