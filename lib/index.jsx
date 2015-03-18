@@ -1,4 +1,4 @@
-var React = require('react/addons');
+var React = require('react');
 var getParents = require('./utils').getParents;
 
 
@@ -72,16 +72,16 @@ module.exports = React.createClass({
 	----------------------------------------- */
 	render: function () {
 
-		var classSet = React.addons.classSet;
-		var flyoutClasses = classSet({
-			'flyout': true,
-			'is-open': this.state.isOpen
-		});
+		var classes = 'flyout';
+
+		if(this.state.isOpen) {
+			classes += ' is-open';
+		}
 
 		var buttonText = (this.state.isOpen) ? 'close' : 'open';
 
 		return (
-			<div className={flyoutClasses}>
+			<div className={classes}>
 				<div className="flyout__header">
 					<button type="button" onClick={this.onButtonClick}>{buttonText}</button>
 				</div>
