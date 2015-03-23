@@ -49,6 +49,8 @@ module.exports = React.createClass({
 	onDocumentClick: function (e) {
 		var parents, matchesEl;
 
+		console.log('test')
+
 		parents = getParents(e.target);
 		matchesEl = false;
 
@@ -83,7 +85,7 @@ module.exports = React.createClass({
 		return (
 			<div className={classes}>
 				<div className="flyout__header">
-					<button type="button" onClick={this.onButtonClick}>{buttonText}</button>
+					<button type="button" className="flyout__toggle" onClick={this.onButtonClick}>{buttonText}</button>
 				</div>
 				<div className="flyout__body">
 					{this.props.children}
