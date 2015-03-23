@@ -4,12 +4,26 @@
   "description": "A simple react flyout component",
   "main": "lib/index.jsx",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "author": "Jelle Versele",
   "license": "ISC",
-  "browserify": {"transform": ["reactify"]},
-  "peerDependencies": {
-  	"react": "~0.13.0"
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "dependencies": {
+    "react": ">=0.13.1"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.4.0",
+    "react-tools": "^0.13.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "node_modules/react"
+    ]
   }
 }
